@@ -1,4 +1,4 @@
-module NotableWebHelper
+module HomeHelper
     include Pagy::Frontend
 end
 

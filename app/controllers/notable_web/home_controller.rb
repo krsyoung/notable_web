@@ -1,7 +1,9 @@
+require 'pagy'
+
 module NotableWeb
   class HomeController < ActionController::Base
     include Pagy::Backend
-    
+
     layout "notable_web/application"
 
     protect_from_forgery with: :exception
