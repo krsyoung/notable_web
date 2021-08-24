@@ -10,10 +10,8 @@ module NotableWeb
       where = safe_params.slice(:status, :note_type, :note, :user_id, :user_type)
       where = {notable_requests: where} if where.any?
 
-      page_method_name = Kaminari.config.page_method_name
-
       # https://github.com/rails/rails/issues/9055
-      @requests = Notable::Request.order("notable_requests.id DESC").where(where).preload(:user).public_send(page_method_name, params[:page]).per(100)
+      @pagy, @requests = pagy Notable::Request.order("notable_requests.id DESC").where(where).preload(:user)
 
       if params[:action_name]
         @requests = @requests.where(action: params[:action_name])

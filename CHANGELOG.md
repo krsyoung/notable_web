@@ -1,3 +1,6 @@
+## 0.1.x (2021-08-23)
+
+- Switch to pagy
 ## 0.1.2 (2019-12-23)
 
 - Fixed error with Rails 6

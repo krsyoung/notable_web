@@ -35,18 +35,6 @@ authenticate :user, ->(user) { user.admin? } do
 end
 ```
 
-#### will_paginate
-
-If using will_paginate, create an initializer `config/initializers/kaminari.rb` with:
-
-```ruby
-Kaminari.configure do |config|
-  config.page_method_name = :per_page_kaminari
-end
-```
-
-to avoid conflicts.
-
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:

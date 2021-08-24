@@ -4,7 +4,7 @@ require "notable_web/version"
 require "notable"
 require "groupdate"
 require "chartkick"
-require "kaminari"
+require "pagy"
 require "public_suffix"
 
 # engine

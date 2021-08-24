@@ -30,9 +30,4 @@
 
 <%= render partial: "stream", locals: {requests: @requests, show_user: !(params[:user_id] && params[:user_type])} %>
 
-<% if @requests.current_page != 1 %>
-  <%= link_to "Prev", safe_params.merge(page: @requests.current_page - 1), style: "margin-right: 20px;" %>
-<% end %>
-<% if @requests.size == @requests.limit_value %>
-  <%= link_to "Next", safe_params.merge(page: @requests.current_page + 1) %>
-<% end %>
+<%== pagy_nav(@pagy) %>
