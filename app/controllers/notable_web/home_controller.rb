@@ -1,5 +1,3 @@
-require 'pagy'
-
 module NotableWeb
   class HomeController < ActionController::Base
     include Pagy::Backend
@@ -13,6 +11,8 @@ module NotableWeb
     def index
       where = safe_params.slice(:status, :note_type, :note, :user_id, :user_type)
       where = {notable_requests: where} if where.any?
+
+      # bro
 
       # https://github.com/rails/rails/issues/9055
       @pagy, @requests = pagy Notable::Request.order("notable_requests.id DESC").where(where).preload(:user)
