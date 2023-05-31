@@ -1,4 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Specify your gem's dependencies in notable_web.gemspec
 gemspec
+
+gem "rake"
+gem "combustion"
+gem "activerecord"
+gem "sqlite3"
+gem "sprockets-rails"
