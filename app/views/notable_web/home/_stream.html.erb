@@ -5,9 +5,6 @@
         <%= request.created_at.in_time_zone(NotableWeb.time_zone).strftime("#{request.created_at < 24.hours.ago ? "%b %-e, " : nil}%-l:%M %P") %>
         <span style="color: #999;"><%= request.status %></span>
         <strong><%= request.note_type %></strong>
-<!--         <% if request.note_type == "Not Found" %>
-          /<%= request.url.sub(/https?:\/\//i, "").split("/", 2).last %>
-        <% end %> -->
         <%= request.note %>
         <span style="color: #999;"><%= request.action %></span>
         <% if request.user and show_user %>

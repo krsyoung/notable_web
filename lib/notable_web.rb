@@ -3,7 +3,6 @@ require "notable_web/version"
 # dependencies
 require "notable"
 require "groupdate"
-require "chartkick"
 require "pagy"
 require "public_suffix"
 

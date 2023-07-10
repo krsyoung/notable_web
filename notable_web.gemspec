@@ -18,7 +18,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "railties", ">= 6"
   spec.add_dependency "notable"
   spec.add_dependency "groupdate"
-  spec.add_dependency "chartkick", ">= 4"
   spec.add_dependency "pagy"
   spec.add_dependency "public_suffix"
 end
