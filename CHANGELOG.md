@@ -1,6 +1,7 @@
 ## 0.2.x (2021-08-23)
 
 - Switch to pagy
+- Removed chartkick, js files
 ## 0.2.0 (2023-01-30)
 
 - Dropped support for Ruby < 2.7 and Rails < 6
