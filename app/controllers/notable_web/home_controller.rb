@@ -15,7 +15,7 @@ module NotableWeb
       # bro
 
       # https://github.com/rails/rails/issues/9055
-      @pagy, @requests = pagy Notable::Request.order("notable_requests.id DESC").where(where).preload(:user)
+      @pagy, @requests = pagy(:offset, Notable::Request.order("notable_requests.id DESC").where(where).preload(:user))
 
       if params[:action_name]
         @requests = @requests.where(action: params[:action_name])
