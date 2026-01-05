@@ -1,6 +1,6 @@
 module NotableWeb
   class HomeController < ActionController::Base
-    include Pagy::Backend
+    include Pagy::Method
 
     layout "notable_web/application"
 

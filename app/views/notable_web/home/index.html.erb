@@ -30,4 +30,4 @@
 
 <%= render partial: "stream", locals: {requests: @requests, show_user: !(params[:user_id] && params[:user_type])} %>
 
-<%== pagy_nav(@pagy) %>
+<%== @pagy.series_nav(@pagy) %>
