@@ -7,7 +7,7 @@ A web interface for [Notable](https://github.com/ankane/notable)
 Add this line to your application’s Gemfile:
 
 ```ruby
-gem 'notable_web'
+gem "notable_web"
 ```
 
 And add it to your `config/routes.rb`.
@@ -47,6 +47,10 @@ end
 
 to avoid conflicts.
 
+## History
+
+View the [changelog](https://github.com/ankane/notable_web/blob/master/CHANGELOG.md)
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
@@ -55,3 +59,12 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 - Fix bugs and [submit pull requests](https://github.com/ankane/notable_web/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
+
+To get started with development:
+
+```sh
+git clone https://github.com/ankane/notable_web.git
+cd notable_web
+bundle install
+bundle exec rake test
+```
